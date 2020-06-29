@@ -30,12 +30,12 @@ namespace ProjetoMVCd28.UI
                 if (bllCliente.consultarBeneficio(cliente.Cpf_cliente, cliente.Nome_cliente, cliente.Nome_mae))
                 {
                     msgerro.Visible = true;
-                    msgerro.Text = "Beneficiário localizado no Banco de Dados ";
+                    msgerro.Text = "Beneficiário Localizado no Banco de dados. Processo em Análise";
                 }
                 else
                 {
                     msgerro.Visible = true;
-                    msgerro.Text = "Beneficiário não localizado no Banco de Dados ";
+                    msgerro.Text = "Beneficiário Não Localizado no Banco de dados.Benefício Negado";
                 }
             }
             catch(Exception exception)
